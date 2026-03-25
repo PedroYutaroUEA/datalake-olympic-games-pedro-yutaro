@@ -1,0 +1,12 @@
+venv
+
+./**/*.csv
+*.csv
+
+*.parquet
+./**/*.parquet
+
+__pycache__
+./**/__pycache__
+
+./**/*.pyc
