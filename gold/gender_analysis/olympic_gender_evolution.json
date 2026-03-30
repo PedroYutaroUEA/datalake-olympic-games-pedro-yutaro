@@ -1,0 +1,42 @@
+{
+    "dataset": "olympic_gender_evolution",
+    "source": "../../silver/joins/integrated_athletes_results.parquet",
+    "description": "Evolução histórica da participação por gênero (1896-2024)",
+    "layer": "gold",
+    "fields": [
+        {
+            "name": "year",
+            "type": "int64",
+            "count": 39
+        },
+        {
+            "name": "Female",
+            "type": "int64",
+            "count": 39
+        },
+        {
+            "name": "Male",
+            "type": "int64",
+            "count": 39
+        },
+        {
+            "name": "total",
+            "type": "int64",
+            "count": 39
+        },
+        {
+            "name": "% Female",
+            "type": "float64",
+            "count": 39
+        },
+        {
+            "name": "% Male",
+            "type": "float64",
+            "count": 39
+        }
+    ],
+    "collected_at": "2026-03-30",
+    "format": ".csv",
+    "observations": "Esse Dado foi gerado na camada gold, na análise de Gêneros, no contexto do percentual de participação histórica de gêneros.",
+    "encoding": "utf-8"
+}

@@ -5,12 +5,32 @@
     "layer": "silver",
     "fields": [
         {
-            "name": "country_noc",
+            "name": "edition_id",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 1899
+        },
+        {
+            "name": "year",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "season",
             "type": "str",
             "count": 1899
         },
         {
             "name": "country",
+            "type": "str",
+            "count": 1899
+        },
+        {
+            "name": "country_noc",
             "type": "str",
             "count": 1899
         },
@@ -33,29 +53,9 @@
             "name": "total",
             "type": "int64",
             "count": 1899
-        },
-        {
-            "name": "year",
-            "type": "int64",
-            "count": 1899
-        },
-        {
-            "name": "season",
-            "type": "str",
-            "count": 1899
-        },
-        {
-            "name": "edition",
-            "type": "str",
-            "count": 1899
-        },
-        {
-            "name": "edition_id",
-            "type": "int64",
-            "count": 1899
         }
     ],
-    "collected_at": "2026-03-27",
+    "collected_at": "2026-03-30",
     "format": ".parquet",
     "observations": "JOIN feito na 3º etapa da pipeline, com destino ao repositório de joins em silver.",
     "encoding": "utf-8"

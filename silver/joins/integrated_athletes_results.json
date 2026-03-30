@@ -1,23 +1,13 @@
 {
     "dataset": "integrated_athletes_results",
-    "source": "../../silver/olympics_paris/athletes.parquet, ../../silver/olympics_paris/medallists.parquet",
-    "description": "Quadro de resultados de atletas (Histórico + Paris 2024)",
+    "source": "../../silver/olympics_history/Olympic_Athlete_Bio.parquet, ../../silver/olympics_history/Olympic_Athlete_Event_Results.parquet, ../../silver/olympics_paris/athletes.parquet, ../../silver/olympics_paris/medallists.parquet, /home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/silver/joins/integrated_medal_tally_1896_2024.parquet",
+    "description": "Dataset mestre de atletas e resultados enriquecido via edition_id.",
     "layer": "silver",
     "fields": [
         {
-            "name": "edition",
-            "type": "str",
+            "name": "edition_id",
+            "type": "int64",
             "count": 319149
-        },
-        {
-            "name": "year",
-            "type": "float64",
-            "count": 2315
-        },
-        {
-            "name": "season",
-            "type": "str",
-            "count": 2315
         },
         {
             "name": "country_noc",
@@ -53,10 +43,25 @@
             "name": "medal_type",
             "type": "str",
             "count": 47002
+        },
+        {
+            "name": "year",
+            "type": "int64",
+            "count": 319149
+        },
+        {
+            "name": "season",
+            "type": "str",
+            "count": 319149
+        },
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 319149
         }
     ],
-    "collected_at": "2026-03-29",
+    "collected_at": "2026-03-30",
     "format": ".parquet",
-    "observations": "JOIN feito na 3º etapa da pipeline, com destino ao repositório de joins em silver.",
+    "observations": "JOIN feito na 3º etapa da pipeline, na sub-etapa 3b (integrate athlete), com destino ao repositório de joins em silver.",
     "encoding": "utf-8"
 }
