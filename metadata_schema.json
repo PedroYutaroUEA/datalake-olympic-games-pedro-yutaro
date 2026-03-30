@@ -1640,9 +1640,36 @@
             "format": ".csv",
             "observations": "Esse Dado foi gerado na camada gold, na análise de Gêneros, no contexto do percentual de participação histórica de gêneros.",
             "encoding": "utf-8"
+        },
+        {
+            "dataset": "dominance_by_modality",
+            "source": "../../silver/joins/integrated_athletes_results.parquet",
+            "description": "Países com maior número de ouros por modalidade esportiva",
+            "layer": "gold",
+            "fields": [
+                {
+                    "name": "sport",
+                    "type": "str",
+                    "count": 85
+                },
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 85
+                },
+                {
+                    "name": "gold_count",
+                    "type": "int64",
+                    "count": 85
+                }
+            ],
+            "collected_at": "2026-03-30",
+            "format": ".csv",
+            "observations": "Esse Dado foi gerado na camada gold, na análise de modalidades, no contexto do ranking de melhores países por modalidade",
+            "encoding": "utf-8"
         }
     ],
-    "version": 50,
+    "version": 51,
     "created_at": "2026-03-27",
-    "updated_at": "2026-03-30 15:04:30"
+    "updated_at": "2026-03-30 16:21:27"
 }
