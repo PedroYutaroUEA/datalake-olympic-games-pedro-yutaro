@@ -1,0 +1,67 @@
+{
+    "dataset": "Olympic_Athlete_Event_Results",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympic_Athlete_Event_Results.csv",
+    "description": "Dados históricos de Olympic_Athlete_Event_Results normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 316834
+        },
+        {
+            "name": "edition_id",
+            "type": "int64",
+            "count": 316834
+        },
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 316834
+        },
+        {
+            "name": "sport",
+            "type": "str",
+            "count": 316834
+        },
+        {
+            "name": "event",
+            "type": "str",
+            "count": 316834
+        },
+        {
+            "name": "result_id",
+            "type": "int64",
+            "count": 316834
+        },
+        {
+            "name": "athlete",
+            "type": "str",
+            "count": 316834
+        },
+        {
+            "name": "athlete_id",
+            "type": "int64",
+            "count": 316834
+        },
+        {
+            "name": "pos",
+            "type": "str",
+            "count": 316834
+        },
+        {
+            "name": "medal",
+            "type": "str",
+            "count": 44687
+        },
+        {
+            "name": "isTeamSport",
+            "type": "bool",
+            "count": 316834
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

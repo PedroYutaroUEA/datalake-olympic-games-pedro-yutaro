@@ -1,0 +1,117 @@
+{
+    "dataset": "medallists",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/medallists.csv",
+    "description": "Dados de Paris 2024 (medallists) com colunas de medalhas padronizadas.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "medal_date",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "medal_type",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "medal_code",
+            "type": "float64",
+            "count": 2314
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "country_code",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "country_long",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "nationality_code",
+            "type": "str",
+            "count": 2314
+        },
+        {
+            "name": "nationality",
+            "type": "str",
+            "count": 2314
+        },
+        {
+            "name": "nationality_long",
+            "type": "str",
+            "count": 2314
+        },
+        {
+            "name": "team",
+            "type": "str",
+            "count": 1555
+        },
+        {
+            "name": "team_gender",
+            "type": "str",
+            "count": 1555
+        },
+        {
+            "name": "discipline",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "event",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "event_type",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "url_event",
+            "type": "str",
+            "count": 2294
+        },
+        {
+            "name": "birth_date",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "code_athlete",
+            "type": "int64",
+            "count": 2315
+        },
+        {
+            "name": "code_team",
+            "type": "str",
+            "count": 1555
+        },
+        {
+            "name": "is_medallist",
+            "type": "bool",
+            "count": 2315
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

@@ -1,0 +1,22 @@
+{
+    "dataset": "Olympics_Country",
+    "source": "../../bronze/olympics_history_1896-2022/",
+    "description": "Histórico de medalhas das olimpiadas históricas de 1896 a 2022",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "noc",
+            "type": "str",
+            "count": 235
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 235
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

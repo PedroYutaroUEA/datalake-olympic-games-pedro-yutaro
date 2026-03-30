@@ -1,0 +1,92 @@
+{
+    "dataset": "teams",
+    "source": "../../bronze/olympics_paris_2024/",
+    "description": "Histórico do total de medalhas das olimpiadas de paris de 2024",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "code",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "current",
+            "type": "bool",
+            "count": 1698
+        },
+        {
+            "name": "team",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "team_gender",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "country_code",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "country_long",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "discipline",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "disciplines_code",
+            "type": "str",
+            "count": 1698
+        },
+        {
+            "name": "events",
+            "type": "str",
+            "count": 1377
+        },
+        {
+            "name": "athletes",
+            "type": "str",
+            "count": 1695
+        },
+        {
+            "name": "coaches",
+            "type": "str",
+            "count": 246
+        },
+        {
+            "name": "athletes_codes",
+            "type": "str",
+            "count": 1695
+        },
+        {
+            "name": "num_athletes",
+            "type": "float64",
+            "count": 1695
+        },
+        {
+            "name": "coaches_codes",
+            "type": "str",
+            "count": 246
+        },
+        {
+            "name": "num_coaches",
+            "type": "float64",
+            "count": 246
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

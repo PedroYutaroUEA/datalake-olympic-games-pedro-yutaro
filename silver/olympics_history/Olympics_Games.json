@@ -1,0 +1,67 @@
+{
+    "dataset": "Olympics_Games",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympics_Games.csv",
+    "description": "Dados históricos de Olympics_Games normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 64
+        },
+        {
+            "name": "edition_id",
+            "type": "int64",
+            "count": 64
+        },
+        {
+            "name": "edition_url",
+            "type": "str",
+            "count": 64
+        },
+        {
+            "name": "year",
+            "type": "int64",
+            "count": 64
+        },
+        {
+            "name": "city",
+            "type": "str",
+            "count": 64
+        },
+        {
+            "name": "country_flag_url",
+            "type": "str",
+            "count": 64
+        },
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 64
+        },
+        {
+            "name": "start_date",
+            "type": "str",
+            "count": 55
+        },
+        {
+            "name": "end_date",
+            "type": "str",
+            "count": 54
+        },
+        {
+            "name": "competition_date",
+            "type": "str",
+            "count": 64
+        },
+        {
+            "name": "isHeld",
+            "type": "str",
+            "count": 5
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

@@ -1,0 +1,67 @@
+{
+    "dataset": "technical_officials",
+    "source": "../../bronze/olympics_paris_2024/",
+    "description": "Histórico do total de medalhas das olimpiadas de paris de 2024",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "code",
+            "type": "int64",
+            "count": 1021
+        },
+        {
+            "name": "current",
+            "type": "bool",
+            "count": 1021
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "function",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "category",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "organisation_code",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "organisation",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "organisation_long",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "disciplines",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "birth_date",
+            "type": "str",
+            "count": 19
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

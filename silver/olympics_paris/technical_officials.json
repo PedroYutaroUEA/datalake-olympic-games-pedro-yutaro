@@ -1,0 +1,67 @@
+{
+    "dataset": "technical_officials",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/technical_officials.csv",
+    "description": "Dados de Paris 2024 (technical_officials) normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "code",
+            "type": "int64",
+            "count": 1021
+        },
+        {
+            "name": "current",
+            "type": "bool",
+            "count": 1021
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "function",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "category",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "organisation_code",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "organisation",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "organisation_long",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "disciplines",
+            "type": "str",
+            "count": 1021
+        },
+        {
+            "name": "birth_date",
+            "type": "str",
+            "count": 19
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

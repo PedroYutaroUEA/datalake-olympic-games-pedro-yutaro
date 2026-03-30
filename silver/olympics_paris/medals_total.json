@@ -1,0 +1,47 @@
+{
+    "dataset": "medals_total",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/medals_total.csv",
+    "description": "Dados de Paris 2024 (medals_total) com colunas de medalhas padronizadas.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "country_code",
+            "type": "str",
+            "count": 92
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 92
+        },
+        {
+            "name": "country_long",
+            "type": "str",
+            "count": 92
+        },
+        {
+            "name": "gold",
+            "type": "int64",
+            "count": 92
+        },
+        {
+            "name": "silver",
+            "type": "int64",
+            "count": 92
+        },
+        {
+            "name": "bronze",
+            "type": "int64",
+            "count": 92
+        },
+        {
+            "name": "total",
+            "type": "int64",
+            "count": 92
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

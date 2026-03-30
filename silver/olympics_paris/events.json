@@ -1,0 +1,37 @@
+{
+    "dataset": "events",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/events.csv",
+    "description": "Dados de Paris 2024 (events) normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "event",
+            "type": "str",
+            "count": 329
+        },
+        {
+            "name": "tag",
+            "type": "str",
+            "count": 329
+        },
+        {
+            "name": "sport",
+            "type": "str",
+            "count": 329
+        },
+        {
+            "name": "sport_code",
+            "type": "str",
+            "count": 329
+        },
+        {
+            "name": "sport_url",
+            "type": "str",
+            "count": 329
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

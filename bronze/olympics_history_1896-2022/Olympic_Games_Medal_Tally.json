@@ -1,0 +1,57 @@
+{
+    "dataset": "Olympic_Games_Medal_Tally",
+    "source": "../../bronze/olympics_history_1896-2022/",
+    "description": "Histórico de medalhas das olimpiadas históricas de 1896 a 2022",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 1807
+        },
+        {
+            "name": "edition_id",
+            "type": "int64",
+            "count": 1807
+        },
+        {
+            "name": "year",
+            "type": "int64",
+            "count": 1807
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 1807
+        },
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 1807
+        },
+        {
+            "name": "gold",
+            "type": "int64",
+            "count": 1807
+        },
+        {
+            "name": "silver",
+            "type": "int64",
+            "count": 1807
+        },
+        {
+            "name": "bronze",
+            "type": "int64",
+            "count": 1807
+        },
+        {
+            "name": "total",
+            "type": "int64",
+            "count": 1807
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

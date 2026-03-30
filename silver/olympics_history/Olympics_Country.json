@@ -1,0 +1,22 @@
+{
+    "dataset": "Olympics_Country",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympics_Country.csv",
+    "description": "Dados históricos de Olympics_Country normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "noc",
+            "type": "str",
+            "count": 235
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 235
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

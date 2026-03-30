@@ -1,0 +1,72 @@
+{
+    "dataset": "coaches",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/coaches.csv",
+    "description": "Dados de Paris 2024 (coaches) normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "code",
+            "type": "int64",
+            "count": 974
+        },
+        {
+            "name": "current",
+            "type": "bool",
+            "count": 974
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "function",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "category",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "country_code",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "country_long",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "disciplines",
+            "type": "str",
+            "count": 974
+        },
+        {
+            "name": "events",
+            "type": "str",
+            "count": 418
+        },
+        {
+            "name": "birth_date",
+            "type": "str",
+            "count": 936
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

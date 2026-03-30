@@ -1,0 +1,1601 @@
+{
+    "datalake": "Olympics Data Lake",
+    "datasets": [
+        {
+            "dataset": "Olympics_Games",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympics_Games.csv",
+            "description": "Dados históricos de Olympics_Games normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "edition",
+                    "type": "str",
+                    "count": 64
+                },
+                {
+                    "name": "edition_id",
+                    "type": "int64",
+                    "count": 64
+                },
+                {
+                    "name": "edition_url",
+                    "type": "str",
+                    "count": 64
+                },
+                {
+                    "name": "year",
+                    "type": "int64",
+                    "count": 64
+                },
+                {
+                    "name": "city",
+                    "type": "str",
+                    "count": 64
+                },
+                {
+                    "name": "country_flag_url",
+                    "type": "str",
+                    "count": 64
+                },
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 64
+                },
+                {
+                    "name": "start_date",
+                    "type": "str",
+                    "count": 55
+                },
+                {
+                    "name": "end_date",
+                    "type": "str",
+                    "count": 54
+                },
+                {
+                    "name": "competition_date",
+                    "type": "str",
+                    "count": 64
+                },
+                {
+                    "name": "isHeld",
+                    "type": "str",
+                    "count": 5
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "Olympics_Country",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympics_Country.csv",
+            "description": "Dados históricos de Olympics_Country normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "noc",
+                    "type": "str",
+                    "count": 235
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 235
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "Olympic_Results",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympic_Results.csv",
+            "description": "Dados históricos de Olympic_Results normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "result_id",
+                    "type": "int64",
+                    "count": 7394
+                },
+                {
+                    "name": "event_title",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "edition",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "edition_id",
+                    "type": "int64",
+                    "count": 7394
+                },
+                {
+                    "name": "sport",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "sport_url",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "result_date",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "result_location",
+                    "type": "str",
+                    "count": 7393
+                },
+                {
+                    "name": "result_participants",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "result_format",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "result_detail",
+                    "type": "str",
+                    "count": 7394
+                },
+                {
+                    "name": "result_description",
+                    "type": "str",
+                    "count": 7394
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "Olympic_Games_Medal_Tally",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympic_Games_Medal_Tally.csv",
+            "description": "Quadro de medalhas histórico com normalização de países e estações.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "edition",
+                    "type": "str",
+                    "count": 1807
+                },
+                {
+                    "name": "edition_id",
+                    "type": "int64",
+                    "count": 1807
+                },
+                {
+                    "name": "year",
+                    "type": "int64",
+                    "count": 1807
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 1807
+                },
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 1807
+                },
+                {
+                    "name": "gold",
+                    "type": "int64",
+                    "count": 1807
+                },
+                {
+                    "name": "silver",
+                    "type": "int64",
+                    "count": 1807
+                },
+                {
+                    "name": "bronze",
+                    "type": "int64",
+                    "count": 1807
+                },
+                {
+                    "name": "total",
+                    "type": "int64",
+                    "count": 1807
+                },
+                {
+                    "name": "season",
+                    "type": "str",
+                    "count": 1807
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "Olympic_Athlete_Event_Results",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympic_Athlete_Event_Results.csv",
+            "description": "Dados históricos de Olympic_Athlete_Event_Results normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "edition",
+                    "type": "str",
+                    "count": 316834
+                },
+                {
+                    "name": "edition_id",
+                    "type": "int64",
+                    "count": 316834
+                },
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 316834
+                },
+                {
+                    "name": "sport",
+                    "type": "str",
+                    "count": 316834
+                },
+                {
+                    "name": "event",
+                    "type": "str",
+                    "count": 316834
+                },
+                {
+                    "name": "result_id",
+                    "type": "int64",
+                    "count": 316834
+                },
+                {
+                    "name": "athlete",
+                    "type": "str",
+                    "count": 316834
+                },
+                {
+                    "name": "athlete_id",
+                    "type": "int64",
+                    "count": 316834
+                },
+                {
+                    "name": "pos",
+                    "type": "str",
+                    "count": 316834
+                },
+                {
+                    "name": "medal",
+                    "type": "str",
+                    "count": 44687
+                },
+                {
+                    "name": "isTeamSport",
+                    "type": "bool",
+                    "count": 316834
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "Olympic_Athlete_Bio",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympic_Athlete_Bio.csv",
+            "description": "Dados históricos de Olympic_Athlete_Bio normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "athlete_id",
+                    "type": "int64",
+                    "count": 155861
+                },
+                {
+                    "name": "name",
+                    "type": "str",
+                    "count": 155861
+                },
+                {
+                    "name": "sex",
+                    "type": "str",
+                    "count": 155861
+                },
+                {
+                    "name": "born",
+                    "type": "str",
+                    "count": 151808
+                },
+                {
+                    "name": "height",
+                    "type": "float64",
+                    "count": 105112
+                },
+                {
+                    "name": "weight",
+                    "type": "str",
+                    "count": 105112
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 155861
+                },
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 155861
+                },
+                {
+                    "name": "description",
+                    "type": "str",
+                    "count": 54863
+                },
+                {
+                    "name": "special_notes",
+                    "type": "str",
+                    "count": 60637
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "venues",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/venues.csv",
+            "description": "Dados de Paris 2024 (venues) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "venue",
+                    "type": "str",
+                    "count": 35
+                },
+                {
+                    "name": "sports",
+                    "type": "str",
+                    "count": 35
+                },
+                {
+                    "name": "date_start",
+                    "type": "str",
+                    "count": 34
+                },
+                {
+                    "name": "date_end",
+                    "type": "str",
+                    "count": 34
+                },
+                {
+                    "name": "tag",
+                    "type": "str",
+                    "count": 35
+                },
+                {
+                    "name": "url",
+                    "type": "str",
+                    "count": 35
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "torch_route",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/torch_route.csv",
+            "description": "Dados de Paris 2024 (torch_route) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "title",
+                    "type": "str",
+                    "count": 73
+                },
+                {
+                    "name": "city",
+                    "type": "str",
+                    "count": 72
+                },
+                {
+                    "name": "date_start",
+                    "type": "str",
+                    "count": 73
+                },
+                {
+                    "name": "date_end",
+                    "type": "str",
+                    "count": 73
+                },
+                {
+                    "name": "tag",
+                    "type": "str",
+                    "count": 73
+                },
+                {
+                    "name": "url",
+                    "type": "str",
+                    "count": 73
+                },
+                {
+                    "name": "stage_number",
+                    "type": "float64",
+                    "count": 68
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "technical_officials",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/technical_officials.csv",
+            "description": "Dados de Paris 2024 (technical_officials) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "code",
+                    "type": "int64",
+                    "count": 1021
+                },
+                {
+                    "name": "current",
+                    "type": "bool",
+                    "count": 1021
+                },
+                {
+                    "name": "name",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "gender",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "function",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "category",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "organisation_code",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "organisation",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "organisation_long",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "disciplines",
+                    "type": "str",
+                    "count": 1021
+                },
+                {
+                    "name": "birth_date",
+                    "type": "str",
+                    "count": 19
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "teams",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/teams.csv",
+            "description": "Dados de Paris 2024 (teams) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "code",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "current",
+                    "type": "bool",
+                    "count": 1698
+                },
+                {
+                    "name": "team",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "team_gender",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "country_code",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "discipline",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "disciplines_code",
+                    "type": "str",
+                    "count": 1698
+                },
+                {
+                    "name": "events",
+                    "type": "str",
+                    "count": 1377
+                },
+                {
+                    "name": "athletes",
+                    "type": "str",
+                    "count": 1695
+                },
+                {
+                    "name": "coaches",
+                    "type": "str",
+                    "count": 246
+                },
+                {
+                    "name": "athletes_codes",
+                    "type": "str",
+                    "count": 1695
+                },
+                {
+                    "name": "num_athletes",
+                    "type": "float64",
+                    "count": 1695
+                },
+                {
+                    "name": "coaches_codes",
+                    "type": "str",
+                    "count": 246
+                },
+                {
+                    "name": "num_coaches",
+                    "type": "float64",
+                    "count": 246
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "schedules_preliminary",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/schedules_preliminary.csv",
+            "description": "Dados de Paris 2024 (schedules_preliminary) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "date_start_utc",
+                    "type": "str",
+                    "count": 2298
+                },
+                {
+                    "name": "date_end_utc",
+                    "type": "str",
+                    "count": 2298
+                },
+                {
+                    "name": "estimated",
+                    "type": "bool",
+                    "count": 2298
+                },
+                {
+                    "name": "estimated_start",
+                    "type": "bool",
+                    "count": 2298
+                },
+                {
+                    "name": "start_text",
+                    "type": "str",
+                    "count": 2
+                },
+                {
+                    "name": "medal",
+                    "type": "float64",
+                    "count": 490
+                },
+                {
+                    "name": "venue_code",
+                    "type": "str",
+                    "count": 2216
+                },
+                {
+                    "name": "description",
+                    "type": "str",
+                    "count": 2298
+                },
+                {
+                    "name": "venue_code_other",
+                    "type": "str",
+                    "count": 82
+                },
+                {
+                    "name": "discription_other",
+                    "type": "str",
+                    "count": 82
+                },
+                {
+                    "name": "team_1_code",
+                    "type": "str",
+                    "count": 212
+                },
+                {
+                    "name": "team_1",
+                    "type": "str",
+                    "count": 212
+                },
+                {
+                    "name": "team_2_code",
+                    "type": "str",
+                    "count": 212
+                },
+                {
+                    "name": "team_2",
+                    "type": "str",
+                    "count": 212
+                },
+                {
+                    "name": "tag",
+                    "type": "str",
+                    "count": 2298
+                },
+                {
+                    "name": "sport",
+                    "type": "str",
+                    "count": 2298
+                },
+                {
+                    "name": "sport_code",
+                    "type": "str",
+                    "count": 2298
+                },
+                {
+                    "name": "sport_url",
+                    "type": "str",
+                    "count": 2298
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "schedules",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/schedules.csv",
+            "description": "Dados de Paris 2024 (schedules) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "start_date",
+                    "type": "str",
+                    "count": 3895
+                },
+                {
+                    "name": "end_date",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "day",
+                    "type": "str",
+                    "count": 3895
+                },
+                {
+                    "name": "status",
+                    "type": "str",
+                    "count": 3895
+                },
+                {
+                    "name": "discipline",
+                    "type": "str",
+                    "count": 3895
+                },
+                {
+                    "name": "discipline_code",
+                    "type": "str",
+                    "count": 3895
+                },
+                {
+                    "name": "event",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "event_medal",
+                    "type": "int64",
+                    "count": 3895
+                },
+                {
+                    "name": "phase",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "gender",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "event_type",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "venue",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "venue_code",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "location_description",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "location_code",
+                    "type": "str",
+                    "count": 3893
+                },
+                {
+                    "name": "url",
+                    "type": "str",
+                    "count": 3810
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "nocs",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/nocs.csv",
+            "description": "Dados de Paris 2024 (nocs) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "code",
+                    "type": "str",
+                    "count": 224
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 224
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 224
+                },
+                {
+                    "name": "tag",
+                    "type": "str",
+                    "count": 224
+                },
+                {
+                    "name": "note",
+                    "type": "str",
+                    "count": 224
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "medals_total",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/medals_total.csv",
+            "description": "Dados de Paris 2024 (medals_total) com colunas de medalhas padronizadas.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "country_code",
+                    "type": "str",
+                    "count": 92
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 92
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 92
+                },
+                {
+                    "name": "gold",
+                    "type": "int64",
+                    "count": 92
+                },
+                {
+                    "name": "silver",
+                    "type": "int64",
+                    "count": 92
+                },
+                {
+                    "name": "bronze",
+                    "type": "int64",
+                    "count": 92
+                },
+                {
+                    "name": "total",
+                    "type": "int64",
+                    "count": 92
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "medals",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/medals.csv",
+            "description": "Dados de Paris 2024 (medals) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "medal_type",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "medal_code",
+                    "type": "float64",
+                    "count": 1043
+                },
+                {
+                    "name": "medal_date",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "name",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "gender",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "discipline",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "event",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "event_type",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "url_event",
+                    "type": "str",
+                    "count": 1035
+                },
+                {
+                    "name": "code",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "country_code",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 1044
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 1044
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "medallists",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/medallists.csv",
+            "description": "Dados de Paris 2024 (medallists) com colunas de medalhas padronizadas.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "medal_date",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "medal_type",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "medal_code",
+                    "type": "float64",
+                    "count": 2314
+                },
+                {
+                    "name": "name",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "gender",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "country_code",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "nationality_code",
+                    "type": "str",
+                    "count": 2314
+                },
+                {
+                    "name": "nationality",
+                    "type": "str",
+                    "count": 2314
+                },
+                {
+                    "name": "nationality_long",
+                    "type": "str",
+                    "count": 2314
+                },
+                {
+                    "name": "team",
+                    "type": "str",
+                    "count": 1555
+                },
+                {
+                    "name": "team_gender",
+                    "type": "str",
+                    "count": 1555
+                },
+                {
+                    "name": "discipline",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "event",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "event_type",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "url_event",
+                    "type": "str",
+                    "count": 2294
+                },
+                {
+                    "name": "birth_date",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "code_athlete",
+                    "type": "int64",
+                    "count": 2315
+                },
+                {
+                    "name": "code_team",
+                    "type": "str",
+                    "count": 1555
+                },
+                {
+                    "name": "is_medallist",
+                    "type": "bool",
+                    "count": 2315
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "events",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/events.csv",
+            "description": "Dados de Paris 2024 (events) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "event",
+                    "type": "str",
+                    "count": 329
+                },
+                {
+                    "name": "tag",
+                    "type": "str",
+                    "count": 329
+                },
+                {
+                    "name": "sport",
+                    "type": "str",
+                    "count": 329
+                },
+                {
+                    "name": "sport_code",
+                    "type": "str",
+                    "count": 329
+                },
+                {
+                    "name": "sport_url",
+                    "type": "str",
+                    "count": 329
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "coaches",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/coaches.csv",
+            "description": "Dados de Paris 2024 (coaches) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "code",
+                    "type": "int64",
+                    "count": 974
+                },
+                {
+                    "name": "current",
+                    "type": "bool",
+                    "count": 974
+                },
+                {
+                    "name": "name",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "gender",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "function",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "category",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "country_code",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "disciplines",
+                    "type": "str",
+                    "count": 974
+                },
+                {
+                    "name": "events",
+                    "type": "str",
+                    "count": 418
+                },
+                {
+                    "name": "birth_date",
+                    "type": "str",
+                    "count": 936
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "athletes",
+            "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/athletes.csv",
+            "description": "Dados de Paris 2024 (athletes) normalizados.",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "code",
+                    "type": "int64",
+                    "count": 11113
+                },
+                {
+                    "name": "current",
+                    "type": "bool",
+                    "count": 11113
+                },
+                {
+                    "name": "name",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "name_short",
+                    "type": "str",
+                    "count": 11110
+                },
+                {
+                    "name": "name_tv",
+                    "type": "str",
+                    "count": 11110
+                },
+                {
+                    "name": "gender",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "function",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "country_code",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "country_long",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "nationality",
+                    "type": "str",
+                    "count": 11110
+                },
+                {
+                    "name": "nationality_long",
+                    "type": "str",
+                    "count": 11110
+                },
+                {
+                    "name": "nationality_code",
+                    "type": "str",
+                    "count": 11110
+                },
+                {
+                    "name": "height",
+                    "type": "float64",
+                    "count": 11110
+                },
+                {
+                    "name": "weight",
+                    "type": "float64",
+                    "count": 11108
+                },
+                {
+                    "name": "disciplines",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "events",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "birth_date",
+                    "type": "str",
+                    "count": 11113
+                },
+                {
+                    "name": "birth_place",
+                    "type": "str",
+                    "count": 8727
+                },
+                {
+                    "name": "birth_country",
+                    "type": "str",
+                    "count": 9475
+                },
+                {
+                    "name": "residence_place",
+                    "type": "str",
+                    "count": 6804
+                },
+                {
+                    "name": "residence_country",
+                    "type": "str",
+                    "count": 8288
+                },
+                {
+                    "name": "nickname",
+                    "type": "str",
+                    "count": 2966
+                },
+                {
+                    "name": "hobbies",
+                    "type": "str",
+                    "count": 4207
+                },
+                {
+                    "name": "occupation",
+                    "type": "str",
+                    "count": 9584
+                },
+                {
+                    "name": "education",
+                    "type": "str",
+                    "count": 5538
+                },
+                {
+                    "name": "family",
+                    "type": "str",
+                    "count": 5561
+                },
+                {
+                    "name": "lang",
+                    "type": "str",
+                    "count": 10605
+                },
+                {
+                    "name": "coach",
+                    "type": "str",
+                    "count": 8222
+                },
+                {
+                    "name": "reason",
+                    "type": "str",
+                    "count": 5846
+                },
+                {
+                    "name": "hero",
+                    "type": "str",
+                    "count": 3315
+                },
+                {
+                    "name": "influence",
+                    "type": "str",
+                    "count": 2155
+                },
+                {
+                    "name": "philosophy",
+                    "type": "str",
+                    "count": 2783
+                },
+                {
+                    "name": "sporting_relatives",
+                    "type": "str",
+                    "count": 2518
+                },
+                {
+                    "name": "ritual",
+                    "type": "str",
+                    "count": 857
+                },
+                {
+                    "name": "other_sports",
+                    "type": "str",
+                    "count": 1060
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "integrated_medal_tally_1896_2024",
+            "source": "../../silver/olympics_paris/medals_total.parquet, ../../silver/olympics_history/Olympic_Games_Medal_Tally.parquet",
+            "description": "Quadro de medalhas unificado de todas as edições (Histórico + Paris 2024)",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 1899
+                },
+                {
+                    "name": "country",
+                    "type": "str",
+                    "count": 1899
+                },
+                {
+                    "name": "gold",
+                    "type": "int64",
+                    "count": 1899
+                },
+                {
+                    "name": "silver",
+                    "type": "int64",
+                    "count": 1899
+                },
+                {
+                    "name": "bronze",
+                    "type": "int64",
+                    "count": 1899
+                },
+                {
+                    "name": "total",
+                    "type": "int64",
+                    "count": 1899
+                },
+                {
+                    "name": "year",
+                    "type": "int64",
+                    "count": 1899
+                },
+                {
+                    "name": "season",
+                    "type": "str",
+                    "count": 1899
+                },
+                {
+                    "name": "edition",
+                    "type": "str",
+                    "count": 1899
+                },
+                {
+                    "name": "edition_id",
+                    "type": "int64",
+                    "count": 1899
+                }
+            ],
+            "collected_at": "2026-03-27",
+            "format": ".parquet",
+            "observations": "JOIN feito na 3º etapa da pipeline, com destino ao repositório de joins em silver.",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "integrated_athletes_results",
+            "source": "../../silver/olympics_paris/athletes.parquet, ../../silver/olympics_paris/medallists.parquet",
+            "description": "Quadro de resultados de atletas (Histórico + Paris 2024)",
+            "layer": "silver",
+            "fields": [
+                {
+                    "name": "edition",
+                    "type": "str",
+                    "count": 319149
+                },
+                {
+                    "name": "year",
+                    "type": "float64",
+                    "count": 2315
+                },
+                {
+                    "name": "season",
+                    "type": "str",
+                    "count": 2315
+                },
+                {
+                    "name": "country_noc",
+                    "type": "str",
+                    "count": 319149
+                },
+                {
+                    "name": "sport",
+                    "type": "str",
+                    "count": 319149
+                },
+                {
+                    "name": "event",
+                    "type": "str",
+                    "count": 319149
+                },
+                {
+                    "name": "athlete_name",
+                    "type": "str",
+                    "count": 319149
+                },
+                {
+                    "name": "athlete_id",
+                    "type": "int64",
+                    "count": 319149
+                },
+                {
+                    "name": "sex",
+                    "type": "str",
+                    "count": 319142
+                },
+                {
+                    "name": "medal_type",
+                    "type": "str",
+                    "count": 47002
+                }
+            ],
+            "collected_at": "2026-03-29",
+            "format": ".parquet",
+            "observations": "JOIN feito na 3º etapa da pipeline, com destino ao repositório de joins em silver.",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "summer_medals",
+            "source": "../../silver/joins/integrated_medal_tally_1896_2024.parquet",
+            "description": "Quadro de medalhas - Jogos de Verão (1896 - 2024)",
+            "layer": "gold",
+            "fields": [
+                {
+                    "name": "gold",
+                    "type": "int64",
+                    "count": 161
+                },
+                {
+                    "name": "silver",
+                    "type": "int64",
+                    "count": 161
+                },
+                {
+                    "name": "bronze",
+                    "type": "int64",
+                    "count": 161
+                },
+                {
+                    "name": "total",
+                    "type": "int64",
+                    "count": 161
+                }
+            ],
+            "collected_at": "2026-03-30",
+            "format": ".csv",
+            "observations": "Esse Dado foi gerado na camada gold, na análise de medalhas por estação, no contexto da geração de quadros de summer",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "winter_medals",
+            "source": "../../silver/joins/integrated_medal_tally_1896_2024.parquet",
+            "description": "Quadro de medalhas - Jogos de Inverno (1896 - 2024)",
+            "layer": "gold",
+            "fields": [
+                {
+                    "name": "gold",
+                    "type": "int64",
+                    "count": 46
+                },
+                {
+                    "name": "silver",
+                    "type": "int64",
+                    "count": 46
+                },
+                {
+                    "name": "bronze",
+                    "type": "int64",
+                    "count": 46
+                },
+                {
+                    "name": "total",
+                    "type": "int64",
+                    "count": 46
+                }
+            ],
+            "collected_at": "2026-03-30",
+            "format": ".csv",
+            "observations": "Esse Dado foi gerado na camada gold, na análise de medalhas por estação, no contexto da geração de quadros de medalhas dos jogos de Inverno.",
+            "encoding": "utf-8"
+        },
+        {
+            "dataset": "total_medals",
+            "source": "../../silver/joins/integrated_medal_tally_1896_2024.parquet",
+            "description": "Quadro de medalhas - Total Histórico (1896 - 2024)",
+            "layer": "gold",
+            "fields": [
+                {
+                    "name": "gold",
+                    "type": "int64",
+                    "count": 162
+                },
+                {
+                    "name": "silver",
+                    "type": "int64",
+                    "count": 162
+                },
+                {
+                    "name": "bronze",
+                    "type": "int64",
+                    "count": 162
+                },
+                {
+                    "name": "total",
+                    "type": "int64",
+                    "count": 162
+                }
+            ],
+            "collected_at": "2026-03-30",
+            "format": ".csv",
+            "observations": "Esse Dado foi gerado na camada gold, na análise de medalhas por estação, no contexto da geração de quadros de medalhas históricas totais (todas as estações).",
+            "encoding": "utf-8"
+        }
+    ],
+    "version": 42,
+    "created_at": "2026-03-27",
+    "updated_at": "2026-03-30 11:30:21"
+}

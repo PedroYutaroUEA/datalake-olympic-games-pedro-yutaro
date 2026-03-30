@@ -1,0 +1,62 @@
+{
+    "dataset": "integrated_medal_tally_1896_2024",
+    "source": "../../silver/olympics_paris/medals_total.parquet, ../../silver/olympics_history/Olympic_Games_Medal_Tally.parquet",
+    "description": "Quadro de medalhas unificado de todas as edições (Histórico + Paris 2024)",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 1899
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 1899
+        },
+        {
+            "name": "gold",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "silver",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "bronze",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "total",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "year",
+            "type": "int64",
+            "count": 1899
+        },
+        {
+            "name": "season",
+            "type": "str",
+            "count": 1899
+        },
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 1899
+        },
+        {
+            "name": "edition_id",
+            "type": "int64",
+            "count": 1899
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "JOIN feito na 3º etapa da pipeline, com destino ao repositório de joins em silver.",
+    "encoding": "utf-8"
+}

@@ -1,0 +1,92 @@
+{
+    "dataset": "schedules",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/schedules.csv",
+    "description": "Dados de Paris 2024 (schedules) normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "start_date",
+            "type": "str",
+            "count": 3895
+        },
+        {
+            "name": "end_date",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "day",
+            "type": "str",
+            "count": 3895
+        },
+        {
+            "name": "status",
+            "type": "str",
+            "count": 3895
+        },
+        {
+            "name": "discipline",
+            "type": "str",
+            "count": 3895
+        },
+        {
+            "name": "discipline_code",
+            "type": "str",
+            "count": 3895
+        },
+        {
+            "name": "event",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "event_medal",
+            "type": "int64",
+            "count": 3895
+        },
+        {
+            "name": "phase",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "event_type",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "venue",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "venue_code",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "location_description",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "location_code",
+            "type": "str",
+            "count": 3893
+        },
+        {
+            "name": "url",
+            "type": "str",
+            "count": 3810
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

@@ -1,0 +1,102 @@
+{
+    "dataset": "schedules_preliminary",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_paris_2024/schedules_preliminary.csv",
+    "description": "Dados de Paris 2024 (schedules_preliminary) normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "date_start_utc",
+            "type": "str",
+            "count": 2298
+        },
+        {
+            "name": "date_end_utc",
+            "type": "str",
+            "count": 2298
+        },
+        {
+            "name": "estimated",
+            "type": "bool",
+            "count": 2298
+        },
+        {
+            "name": "estimated_start",
+            "type": "bool",
+            "count": 2298
+        },
+        {
+            "name": "start_text",
+            "type": "str",
+            "count": 2
+        },
+        {
+            "name": "medal",
+            "type": "float64",
+            "count": 490
+        },
+        {
+            "name": "venue_code",
+            "type": "str",
+            "count": 2216
+        },
+        {
+            "name": "description",
+            "type": "str",
+            "count": 2298
+        },
+        {
+            "name": "venue_code_other",
+            "type": "str",
+            "count": 82
+        },
+        {
+            "name": "discription_other",
+            "type": "str",
+            "count": 82
+        },
+        {
+            "name": "team_1_code",
+            "type": "str",
+            "count": 212
+        },
+        {
+            "name": "team_1",
+            "type": "str",
+            "count": 212
+        },
+        {
+            "name": "team_2_code",
+            "type": "str",
+            "count": 212
+        },
+        {
+            "name": "team_2",
+            "type": "str",
+            "count": 212
+        },
+        {
+            "name": "tag",
+            "type": "str",
+            "count": 2298
+        },
+        {
+            "name": "sport",
+            "type": "str",
+            "count": 2298
+        },
+        {
+            "name": "sport_code",
+            "type": "str",
+            "count": 2298
+        },
+        {
+            "name": "sport_url",
+            "type": "str",
+            "count": 2298
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

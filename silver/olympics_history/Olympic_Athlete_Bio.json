@@ -1,0 +1,62 @@
+{
+    "dataset": "Olympic_Athlete_Bio",
+    "source": "/home/deus/Documents/UEA/7_periodo/data_sci/datalake-olympic-games-pedro-yutaro/bronze/olympics_history_1896-2022/Olympic_Athlete_Bio.csv",
+    "description": "Dados históricos de Olympic_Athlete_Bio normalizados.",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "athlete_id",
+            "type": "int64",
+            "count": 155861
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "sex",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "born",
+            "type": "str",
+            "count": 151808
+        },
+        {
+            "name": "height",
+            "type": "float64",
+            "count": 105112
+        },
+        {
+            "name": "weight",
+            "type": "str",
+            "count": 105112
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "description",
+            "type": "str",
+            "count": 54863
+        },
+        {
+            "name": "special_notes",
+            "type": "str",
+            "count": 60637
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".parquet",
+    "observations": "Dado gerado na 2º etapa da pipeline - Limpeza e normalizaçaõ dos dados brutos em bronze para a camada silver",
+    "encoding": "utf-8"
+}

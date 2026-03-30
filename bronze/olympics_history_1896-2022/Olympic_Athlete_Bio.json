@@ -1,0 +1,62 @@
+{
+    "dataset": "Olympic_Athlete_Bio",
+    "source": "../../bronze/olympics_history_1896-2022/",
+    "description": "Histórico de medalhas das olimpiadas históricas de 1896 a 2022",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "athlete_id",
+            "type": "int64",
+            "count": 155861
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "sex",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "born",
+            "type": "str",
+            "count": 151808
+        },
+        {
+            "name": "height",
+            "type": "float64",
+            "count": 105112
+        },
+        {
+            "name": "weight",
+            "type": "str",
+            "count": 105112
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 155861
+        },
+        {
+            "name": "description",
+            "type": "str",
+            "count": 54863
+        },
+        {
+            "name": "special_notes",
+            "type": "str",
+            "count": 60637
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

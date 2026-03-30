@@ -1,0 +1,77 @@
+{
+    "dataset": "medals",
+    "source": "../../bronze/olympics_paris_2024/",
+    "description": "Histórico do total de medalhas das olimpiadas de paris de 2024",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "medal_type",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "medal_code",
+            "type": "float64",
+            "count": 1043
+        },
+        {
+            "name": "medal_date",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "discipline",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "event",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "event_type",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "url_event",
+            "type": "str",
+            "count": 1035
+        },
+        {
+            "name": "code",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "country_code",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 1044
+        },
+        {
+            "name": "country_long",
+            "type": "str",
+            "count": 1044
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

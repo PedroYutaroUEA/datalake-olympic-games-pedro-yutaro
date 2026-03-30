@@ -1,0 +1,62 @@
+{
+    "dataset": "integrated_athletes_results",
+    "source": "../../silver/olympics_paris/athletes.parquet, ../../silver/olympics_paris/medallists.parquet",
+    "description": "Quadro de resultados de atletas (Histórico + Paris 2024)",
+    "layer": "silver",
+    "fields": [
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 319149
+        },
+        {
+            "name": "year",
+            "type": "float64",
+            "count": 2315
+        },
+        {
+            "name": "season",
+            "type": "str",
+            "count": 2315
+        },
+        {
+            "name": "country_noc",
+            "type": "str",
+            "count": 319149
+        },
+        {
+            "name": "sport",
+            "type": "str",
+            "count": 319149
+        },
+        {
+            "name": "event",
+            "type": "str",
+            "count": 319149
+        },
+        {
+            "name": "athlete_name",
+            "type": "str",
+            "count": 319149
+        },
+        {
+            "name": "athlete_id",
+            "type": "int64",
+            "count": 319149
+        },
+        {
+            "name": "sex",
+            "type": "str",
+            "count": 319142
+        },
+        {
+            "name": "medal_type",
+            "type": "str",
+            "count": 47002
+        }
+    ],
+    "collected_at": "2026-03-29",
+    "format": ".parquet",
+    "observations": "JOIN feito na 3º etapa da pipeline, com destino ao repositório de joins em silver.",
+    "encoding": "utf-8"
+}

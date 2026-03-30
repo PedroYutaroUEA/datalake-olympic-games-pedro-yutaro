@@ -1,0 +1,192 @@
+{
+    "dataset": "athletes",
+    "source": "../../bronze/olympics_paris_2024/",
+    "description": "Histórico do total de medalhas das olimpiadas de paris de 2024",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "code",
+            "type": "int64",
+            "count": 11113
+        },
+        {
+            "name": "current",
+            "type": "bool",
+            "count": 11113
+        },
+        {
+            "name": "name",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "name_short",
+            "type": "str",
+            "count": 11110
+        },
+        {
+            "name": "name_tv",
+            "type": "str",
+            "count": 11110
+        },
+        {
+            "name": "gender",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "function",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "country_code",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "country",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "country_long",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "nationality",
+            "type": "str",
+            "count": 11110
+        },
+        {
+            "name": "nationality_long",
+            "type": "str",
+            "count": 11110
+        },
+        {
+            "name": "nationality_code",
+            "type": "str",
+            "count": 11110
+        },
+        {
+            "name": "height",
+            "type": "float64",
+            "count": 11110
+        },
+        {
+            "name": "weight",
+            "type": "float64",
+            "count": 11108
+        },
+        {
+            "name": "disciplines",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "events",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "birth_date",
+            "type": "str",
+            "count": 11113
+        },
+        {
+            "name": "birth_place",
+            "type": "str",
+            "count": 8727
+        },
+        {
+            "name": "birth_country",
+            "type": "str",
+            "count": 9475
+        },
+        {
+            "name": "residence_place",
+            "type": "str",
+            "count": 6804
+        },
+        {
+            "name": "residence_country",
+            "type": "str",
+            "count": 8288
+        },
+        {
+            "name": "nickname",
+            "type": "str",
+            "count": 2966
+        },
+        {
+            "name": "hobbies",
+            "type": "str",
+            "count": 4207
+        },
+        {
+            "name": "occupation",
+            "type": "str",
+            "count": 9584
+        },
+        {
+            "name": "education",
+            "type": "str",
+            "count": 5538
+        },
+        {
+            "name": "family",
+            "type": "str",
+            "count": 5561
+        },
+        {
+            "name": "lang",
+            "type": "str",
+            "count": 10605
+        },
+        {
+            "name": "coach",
+            "type": "str",
+            "count": 8222
+        },
+        {
+            "name": "reason",
+            "type": "str",
+            "count": 5846
+        },
+        {
+            "name": "hero",
+            "type": "str",
+            "count": 3315
+        },
+        {
+            "name": "influence",
+            "type": "str",
+            "count": 2155
+        },
+        {
+            "name": "philosophy",
+            "type": "str",
+            "count": 2783
+        },
+        {
+            "name": "sporting_relatives",
+            "type": "str",
+            "count": 2518
+        },
+        {
+            "name": "ritual",
+            "type": "str",
+            "count": 857
+        },
+        {
+            "name": "other_sports",
+            "type": "str",
+            "count": 1060
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

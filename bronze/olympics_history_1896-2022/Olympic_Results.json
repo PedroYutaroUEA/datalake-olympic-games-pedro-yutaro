@@ -1,0 +1,72 @@
+{
+    "dataset": "Olympic_Results",
+    "source": "../../bronze/olympics_history_1896-2022/",
+    "description": "Histórico de medalhas das olimpiadas históricas de 1896 a 2022",
+    "layer": "bronze",
+    "fields": [
+        {
+            "name": "result_id",
+            "type": "int64",
+            "count": 7394
+        },
+        {
+            "name": "event_title",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "edition",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "edition_id",
+            "type": "int64",
+            "count": 7394
+        },
+        {
+            "name": "sport",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "sport_url",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "result_date",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "result_location",
+            "type": "str",
+            "count": 7393
+        },
+        {
+            "name": "result_participants",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "result_format",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "result_detail",
+            "type": "str",
+            "count": 7394
+        },
+        {
+            "name": "result_description",
+            "type": "str",
+            "count": 7394
+        }
+    ],
+    "collected_at": "2026-03-27",
+    "format": ".csv",
+    "observations": "Dado gerado na 1º pipeline - geração de metadados da camada bronze",
+    "encoding": "utf-8"
+}

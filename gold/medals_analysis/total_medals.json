@@ -1,0 +1,32 @@
+{
+    "dataset": "total_medals",
+    "source": "../../silver/joins/integrated_medal_tally_1896_2024.parquet",
+    "description": "Quadro de medalhas - Total Histórico (1896 - 2024)",
+    "layer": "gold",
+    "fields": [
+        {
+            "name": "gold",
+            "type": "int64",
+            "count": 162
+        },
+        {
+            "name": "silver",
+            "type": "int64",
+            "count": 162
+        },
+        {
+            "name": "bronze",
+            "type": "int64",
+            "count": 162
+        },
+        {
+            "name": "total",
+            "type": "int64",
+            "count": 162
+        }
+    ],
+    "collected_at": "2026-03-30",
+    "format": ".csv",
+    "observations": "Esse Dado foi gerado na camada gold, na análise de medalhas por estação, no contexto da geração de quadros de medalhas históricas totais (todas as estações).",
+    "encoding": "utf-8"
+}
